@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array no Canvas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-white">
+  <main class="bg-gray-100 p-6 flex flex-col items-center gap-4 h-screen">
+    <h1 class="text-xl font-bold">Array no Canvas</h1>
+
+    <!-- Formulário de Inserção e Ordenação -->
+    <form id="form-valor" class="flex items-center gap-2">
+      <input id="input-valor" type="number" placeholder="Valor" class="border px-2 py-1">
+      <button type="submit" class="border px-3 py-1 bg-white hover:bg-gray-200">Confirmar</button>
+      <button type="button" id="btn-inserir-ordenado" class="border px-3 py-1 bg-white hover:bg-gray-200">
+        Inserir Ordenado
+      </button>
+      <button type="button" id="btn-ordenar" class="border px-3 py-1 bg-white hover:bg-gray-200">
+        Ordenar
+      </button>
+    </form>
+
+    <!-- Sessão de Busca -->
+    <div class="flex items-center gap-2">
+      <input id="input-busca" type="number" placeholder="Buscar valor" class="border px-2 py-1">
+      <button type="button" id="btn-busca-sequencial" class="border px-3 py-1 bg-white hover:bg-gray-200">
+        Busca Sequencial
+      </button>
+      <button type="button" id="btn-busca-binaria" class="border px-3 py-1 bg-white hover:bg-gray-200">
+        Busca Binária
+      </button>
+    </div>
+
+    <!-- Mensagem de Resultado -->
+    <p id="mensagem" class="text-sm h-5 font-semibold text-gray-700"></p>
+
+    <canvas id="canvas" width="800" height="260" class="bg-white"></canvas>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
